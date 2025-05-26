@@ -60,7 +60,7 @@ Implemented a closed‑form physiological equation—Keytel formula—to estimat
 | Random Forest  | 0.1224 ± 0.0008  |
 | LightGBM       | 0.11732 |
 
-## Notebooks
+## Kaggle Notebooks
 
 1. [Baseline: Keytel Formula](https://www.kaggle.com/code/yixuliu/predict-calorie-expenditure-keytel-formula)
 2. [EDA & Random Forest](https://www.kaggle.com/code/yixuliu/eda-and-fe-random-forest-regressor)
