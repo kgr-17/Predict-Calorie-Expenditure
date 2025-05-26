@@ -43,14 +43,12 @@ Implemented a closed‑form physiological equation—Keytel formula—to estimat
 
 ### 3. Random Forest Regressor
 
-- **Model**: `RandomForestRegressor(n_estimators=200, max_depth=10, random_state=42, n_jobs=-1)`
 - **Evaluation**: 5‑fold CV with RMSLE = 0.1224 ± 0.0008.
 
 ### 4. LightGBM
 
-- **Config**: Objective = `regression`, Metric = `l2` (MSE) for consistency between training and evaluation.
-- **Tuning**: Cross‑validation to optimize hyperparameters.
-- **Evaluation**: RMSLE = 0.11732.
+- **Algorithm**: LightGBM regressor with GPU support
+- **Performance**: RMSLE = 0.11732
 
 ## Results
 
