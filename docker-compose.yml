@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  jupyter:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    # The CMD in the Dockerfile will fire automatically; no need to re-install each time
