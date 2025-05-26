@@ -23,7 +23,7 @@ This repository contains code and analysis for predicting calorie expenditure us
 
 ## Dataset
 
-- **train.csv**: 750,000 samples with 9 columns (`id`, `Sex`, `Age`, `Height`, `Weight`, `Duration`, `Heart_Rate`, `Body_Temp`, `Calories` target)fileciteturn0file0.
+- **train.csv**: 750,000 samples with 9 columns (`id`, `Sex`, `Age`, `Height`, `Weight`, `Duration`, `Heart_Rate`, `Body_Temp`, `Calories` target).
 - **test.csv**: Same features as `train.csv` without the `Calories` column.
 - **sample_submission.csv**: Template for submission with `id` and `Calories` columns.
 
@@ -31,7 +31,7 @@ This repository contains code and analysis for predicting calorie expenditure us
 
 ### 1. Baseline: Keytel Formula
 
-Implemented a closed‑form physiological equation—Keytel formula—to estimate calories per minute, multiplied by duration. Serves as a benchmark with public RMSLE = 0.32672fileciteturn0file0.
+Implemented a closed‑form physiological equation—Keytel formula—to estimate calories per minute, multiplied by duration. Serves as a benchmark with public RMSLE = 0.32672.
 
 ### 2. Exploratory Data Analysis & Feature Engineering
 
@@ -39,7 +39,7 @@ Implemented a closed‑form physiological equation—Keytel formula—to estimat
 - Engineered features:
   - `dur_temp`: Duration × Body_Temp (corr ≈ 0.96)
   - `delta_temp`: Body_Temp − 37 (corr ≈ 0.83)
-  - K‑Means clusters for Heart Rate (4 zones) and Age (5 bins) to capture non‑linear effectsfileciteturn0file0.
+  - K‑Means clusters for Heart Rate (4 zones) and Age (5 bins) to capture non‑linear effects.
 
 ### 3. Random Forest Regressor
 
@@ -50,6 +50,7 @@ Implemented a closed‑form physiological equation—Keytel formula—to estimat
 
 - **Config**: Objective = `regression`, Metric = `l2` (MSE) for consistency between training and evaluation.
 - **Tuning**: Cross‑validation to optimize hyperparameters.
+- **Evaluation**: RMSLE = 0.11732.
 
 ## Results
 
